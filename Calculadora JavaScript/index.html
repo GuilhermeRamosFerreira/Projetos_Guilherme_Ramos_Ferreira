@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Vamos Calcular</h1>
+    <hr>
+    <!--Parte Responsavel Pela Adição-->
+    <h2>Adição</h2>
+    <input type="number" name="valor_adição_01" id="valor_adição_01"> +
+    <input type="number" name="valor_adição_02" id="valor_adição_02">
+    <input type="button" value="Calcular" onclick="somar_01()">
+    <h4 id="apresentar_01"></h4>
+    <hr>
+    <!--Parte Responsavel Pela Multiplicção-->
+    <h2>Multiplição</h2>
+    <input type="number" name="valor_multiplicação_01" id="valor_multiplicação_01"> X
+    <input type="number" name="valor_multiplicação_02" id="valor_multiplicação_02">
+    <input type="button" value="Calcular" onclick="somar_02()">
+    <h4 id="apresentar_02"></h4>
+    <hr>
+    <!--Parte Responsavel Pela Divisão-->
+    <h2>Divisão</h2>
+    <input type="number" name="valor_divisão_01" id="valor_divisão_01"> ÷
+    <input type="number" name="valor_divisão_02" id="valor_divisão_02">
+    <input type="button" value="Calcular" onclick="somar_03()">
+    <h4 id="apresentar_03"></h4>
+    <hr>
+    <!--Parte Responsavel Pela Subtração-->
+    <h2>Subtração</h2>
+    <input type="number" name="valor_subtração_01" id="valor_subtração_01"> -
+    <input type="number" name="valor_subtração_02" id="valor_subtração_02">
+    <input type="button" value="Calcular" onclick="somar_04()">
+    <h4 id="apresentar_04"></h4>
+    <hr>
+    <h4>By:Guilherme Ramos Ferreira</h4>
+    <script>
+     /* Objetivo */    
+     /* Fazer Calculos De Adição, Multiplicação, Divisão, Subtração */   
+     /* Definição De Funçoês */ 
+     function somar_01() {
+     /* Definicão De Variaves */ 
+     /* Definição Dos Valores Da Adição */  
+        let adiçãoPrimeiroValor = window.document.getElementById("valor_adição_01")
+        let adiçãoSegundoValor = window.document.getElementById("valor_adição_01")
+        let valor_adição01 = Number(adiçãoPrimeiroValor.value)
+        let valor_adição02 = Number(adiçãoSegundoValor.value)
+        let somaAdição = valor_adição01 + valor_adição02
+        apresentar_01.innerHTML = (`Resultado:${somaAdição}`)
+     }
+     function somar_02() {
+     /* Definicão De Variaves */
+     /* Definição Dos Valores Da Multiplicação */   
+        let multipliçãoPrimeiroValor = window.document.getElementById("valor_multiplicação_01")
+        let multipliçãoSegundoValor = window.document.getElementById("valor_multiplicação_02")
+        let valor_multiplicação01 = Number(multipliçãoPrimeiroValor.value)
+        let valor_multiplicação02 = Number(multipliçãoSegundoValor.value)
+        let somaMultiplicação = valor_multiplicação01 * valor_multiplicação02
+        apresentar_02.innerHTML = (`Resultado:${somaMultiplicação}`)
+        }
+     function somar_03() {
+     /* Definicão De Variaves */ 
+     /* Definição Dos Valores Da Divisão */   
+        let divisãoPrimeiroValor = window.document.getElementById("valor_divisão_01")
+        let divisãoSegundoValor = window.document.getElementById("valor_divisão_02")
+        let valor_divisão01 = Number(divisãoPrimeiroValor.value)
+        let valor_divisão02 = Number(divisãoSegundoValor.value)
+        let somaDivisão = valor_divisão01 / valor_divisão02
+        apresentar_03.innerHTML = (`Resultado:${somaDivisão}`)
+     }
+     function somar_04() {
+     /* Definicão De Variaves */ 
+     /* Definição Dos Valores Da Subtração */
+        let subtraçãoPrimeiroValor = window.document.getElementById("valor_subtração_01")
+        let subtraçãoSegundoValor = window.document.getElementById("valor_subtração_02")
+        let valor_subtração01 = Number(subtraçãoPrimeiroValor.value)
+        let valor_subtração02 = Number(subtraçãoSegundoValor.value)
+        let somaSubtração = valor_subtração01 - valor_subtração02
+        apresentar_04.innerHTML = (`Resultado:${somaSubtração}`)
+     }
+    </script>
+</body>
+</html>

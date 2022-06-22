@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Dentran-Ap</title>
+</head>
+<body>
+    <h1 align="center">Seja Bem-Vindo</h1>
+    <h2>Vamor Verificar Sua Velocidade</h2>
+    <h3>Digite Sua Velocidade Abaixo:</h3>
+    <!--Definição De Input De Verificação-->
+    <input type="number" name="valor01" id="valor01"><br>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <input type="button" value="Limpar" onclick="limpar()">
+    <!--Definição De Apresentar o Resultado-->
+    <h4 id="apresentar"></h4>
+    <!--Definição De Script=Javascript-->
+    <script>
+    function verificar() {
+        var velocidade = window.document.getElementById("valor01")
+        var velocidadeRadar = Number(velocidade.value)
+        /* Definição De Velocidae */
+        switch (velocidadeRadar) {
+            case 10:
+            apresentar.innerHTML = ("Velocidade Otíma, Você Pode Acelerar Um Pouco!!")    
+                break;
+            case 20:
+            apresentar.innerHTML = ("Velocidade Otíma, Você Está Indo Em Uma Velocidae Estavel")  
+                break;
+            case 30:
+            apresentar.innerHTML = ("Velocidade Otíma, Você Está Andando Bem") 
+                break; 
+            case 40:
+            apresentar.innerHTML = ("Velocidade Otíma, Você Está Andando Bem Cuidado Com o Pessoal Na Rua")    
+                break;
+            case 50:
+            apresentar.innerHTML = ("Velocidade Otíma, Ops!, Sua Velocidade Está Começando a Ficar Rapido")
+                break;
+            case 60 :
+            apresentar.innerHTML = ("Sua Velocidade Está Muito Rapida, Mutado!1x")
+                break;   
+             case 70:
+            apresentar.innerHTML = ("Sua Velocidade Está Muito Rapida, Mutado!2x")    
+                break;
+            case 80:
+            apresentar.innerHTML = ("Sua Velocidade Está Muito Rapida, Mutado!3x")  
+                break;
+            case 90:
+            apresentar.innerHTML = ("Sua Velocidade Está Muito Rapida, Mutado!4x")
+                break; 
+            case 100:
+            apresentar.innerHTML = ("Sua Velocidade Está Muito Rapida, Mutado!5x")   
+                break;
+            case 110:
+            apresentar.innerHTML = ("Sua Velocidade Está Muito Rapida, Mutado!6x")
+                break;
+            case 120 :
+            apresentar.innerHTML = ("Sua Velocidade Está Muito Rapida, Mutado!7x")
+                break;
+            default:
+                break;
+        }
+    }    
+    function limpar() {
+        apresentar.innerHTML = ("   ")
+    }
+
+    </script>
+</body>
+</html>
